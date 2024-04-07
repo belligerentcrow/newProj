@@ -1,6 +1,3 @@
-import java.util.Random;
-
-
 public class Creatore {
 
     public static Azienda azienda = new Azienda();
@@ -8,7 +5,7 @@ public class Creatore {
     
     public void inizialize(){
         azienda.createFirstGiardiniere();
-        // create first plant through seminatore
+        seminatore.getPianta();
     }
 
     public static Giardiniere getGiardiniere(){ 
@@ -18,10 +15,28 @@ public class Creatore {
         return getGiardiniere();
     }
 
-    public static Pianta getPianta(boolean p){
-        if (seminatore.noSeminatori){
-            seminatore.createFirstPianta();
+    public static Pianta getPiantaS(String s){
+        return seminatore.getPianta(s);
+    }
+
+    public static Pianta getPiantaS(){
+       return seminatore.getPianta();
+    }
+
+    public void exploreAzienda(){
+        System.out.println("Exploring my azienda ...\n");
+        for(Giardiniere g : azienda.mieiGiardinieri){
+            g.curriculum();
         }
-        return getPianta();
-    }    
+        System.out.println("\nExploration over!");
+    }
+
+    public void exploreSeminatore(){
+        System.out.println("Exoloring my seminatore ...\n");
+        for(Pianta p : seminatore.miePiante){
+            p.identifica();
+        }
+        System.out.println("\nExploration over!");
+    }
+
 }

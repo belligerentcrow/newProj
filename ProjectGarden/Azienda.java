@@ -3,14 +3,15 @@ import java.util.List;
 import java.util.Random;
 
 public class Azienda {
-    private static List<Giardiniere> mieiGiardinieri = new ArrayList<>();
+    public List<Giardiniere> mieiGiardinieri = new ArrayList<>();
     private static String[] names = {"Saro", "Sara", "Samwise", "Lucia", "Alice", "Giovanni", "Giovanna", "Jamie", "John"};
-    
+    private int numGiardinieri;
     public boolean noGardeners = true;
 
     public void createFirstGiardiniere(){
         Giardiniere gard = new Giardiniere(generateName());
         noGardeners = false;
+        ++numGiardinieri;
         mieiGiardinieri.add(gard);
     }
 
@@ -24,6 +25,7 @@ public class Azienda {
         }
         gard = new Giardiniere(generateName());
         mieiGiardinieri.add(gard);
+        ++numGiardinieri;
         return gard; 
     }
 

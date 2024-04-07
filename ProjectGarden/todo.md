@@ -1,5 +1,5 @@
-- sistemare Seminatore (come Azienda)
-- sistemare Pianta
-- sistemare Rosmarino e Aloe
-- creare nuova sottoclasse pianta (ulivo) dove serve prendere i frutti (olive) e non le foglie e vedere se funziona
-- creare classi di test per tutto 
+[x] - sistemare Seminatore (come Azienda)  
+[x] - sistemare Pianta  
+[x] - sistemare Rosmarino e Aloe  
+- creare nuova sottoclasse pianta (ulivo) dove serve prendere i frutti (olive) e non le foglie e vedere se funziona  
+- creare classi di test per tutto   

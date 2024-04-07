@@ -22,11 +22,6 @@ public class Aloe implements Pianta{
         }
     }
 
-    public int cediFoglie(){
-        int temp = foglie;
-        foglie = 0;
-        return temp;
-    }
     public void getInnaffiato(double w){
         percentoAcqua = percentoAcqua+w;
         if(percentoAcqua > 1){
