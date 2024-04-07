@@ -8,6 +8,10 @@ public class Azienda {
     private int numGiardinieri;
     public boolean noGardeners = true;
 
+    public int getNumGiardinieri(){
+        return numGiardinieri;
+    }
+
     public void createFirstGiardiniere(){
         Giardiniere gard = new Giardiniere(generateName());
         noGardeners = false;
