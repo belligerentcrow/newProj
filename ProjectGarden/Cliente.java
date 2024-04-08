@@ -4,5 +4,9 @@ public class Cliente {
 
         // test all the functionalities of the project -- todo
         System.out.println("hello world");
+
+        myCreatore.inizialize();
+        //myCreatore.exploreAzienda();
+        //myCreatore.exploreSeminatore();
     }
 }
