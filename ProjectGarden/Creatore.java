@@ -5,7 +5,7 @@ public class Creatore {
     
     public void inizialize(){
         azienda.createFirstGiardiniere();
-        seminatore.getPianta();
+        //seminatore.getPianta();
     }
 
     public static Giardiniere getGiardiniere(){ 

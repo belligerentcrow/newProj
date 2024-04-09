@@ -1,16 +1,26 @@
+import java.util.Random;
+
 public class Rosmarino implements Pianta {
     private int foglie;
     private double percentoAcqua;
     private String rosmarinotype;
     private int leafrate = 10;
     private double waterRate = 0.10;
-    private final String[] varieta = {"Officinale", "Prostrato"};
+    private String[] varieta = {"Officinale", "Prostrato"};
+
+    public Rosmarino(){
+        foglie = 0;
+        percentoAcqua = 0.25;
+        int t = new Random().nextInt(varieta.length);
+        rosmarinotype = varieta[t];
+    }
 
     public Rosmarino(int t){
         foglie = 0;
-        percentoAcqua = 0.25;
+        percentoAcqua = 0.40;
         rosmarinotype = varieta[t];
     }
+
 
     @Override
     public void cresce(){

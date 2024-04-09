@@ -6,7 +6,9 @@ public class Cliente {
         System.out.println("hello world");
 
         myCreatore.inizialize();
-        //myCreatore.exploreAzienda();
-        //myCreatore.exploreSeminatore();
+        Giardiniere gard1 = myCreatore.azienda.getGiardiniere();
+        gard1.startCare(myCreatore.seminatore.getPianta());
+        myCreatore.exploreAzienda();
+        myCreatore.exploreSeminatore();
     }
 }

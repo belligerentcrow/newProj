@@ -44,6 +44,7 @@ public class Giardiniere {
         if(!pianteCurate.contains(p)){
             ++numPianteCurateNow;
             pianteCurate.add(p);
+            setOccupation(true);
             System.out.println("Plant "+ p.getType()+" added to care of" + name + "!");
         }else{
             System.out.println(name + " is already taking care of this "+ p.getType());
@@ -54,6 +55,7 @@ public class Giardiniere {
         if(pianteCurate.contains(p)){
             --numPianteCurateNow;
             pianteCurate.remove(p);
+            setOccupation(false);
             System.out.println(name + " has stopped caring for this " + p.getType());
         }else{
             System.out.println(name + " isn't taking care of this " + p.getType());

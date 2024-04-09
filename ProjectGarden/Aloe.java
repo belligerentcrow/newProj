@@ -1,3 +1,4 @@
+import java.util.Random;
 public class Aloe implements Pianta{
     private int foglie;
     private double percentoAcqua;
@@ -5,6 +6,13 @@ public class Aloe implements Pianta{
     private double waterRate = 0.05;
     private String aloetype;
     private final String[] varieta = {"Ferox", "Vera", "Brevifolia"};
+
+    public Aloe(){
+        foglie = 0;
+        percentoAcqua = 0.40;
+        int t = new Random().nextInt(varieta.length);
+        aloetype = varieta[t];
+    }
 
     public Aloe(int t){
         foglie = 0;

@@ -23,7 +23,7 @@ public class Seminatore {
 
     //select randomly
     public Pianta getPianta(){
-        try{
+        /*try{
         Class<?> cls = Class.forName(generateType());
         Constructor<?> cnstr = cls.getConstructor(new Class[]{});
         Pianta p = (Pianta) cnstr.newInstance();
@@ -32,7 +32,7 @@ public class Seminatore {
         return p;
         } catch (InstantiationException | IllegalAccessException | IllegalArgumentException | InvocationTargetException | NoSuchMethodException | SecurityException | ClassNotFoundException e){
             e.printStackTrace();
-        }
+        }*/ 
         int r = new Random().nextInt(listaPianteTipiPossibili.size());
         Pianta p2 = getPianta(listaPianteTipiPossibili.get(r)); 
         miePiante.add(p2);

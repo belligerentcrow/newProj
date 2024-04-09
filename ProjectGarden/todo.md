@@ -3,3 +3,5 @@
 [x] - sistemare Rosmarino e Aloe  
 - creare nuova sottoclasse pianta (ulivo) dove serve prendere i frutti (olive) e non le foglie e vedere se funziona  
 - creare classi di test per tutto   
+
+- capire perche' le piante iniziali vengono duplicate??
