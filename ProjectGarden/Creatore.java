@@ -8,18 +8,18 @@ public class Creatore {
         //seminatore.getPianta();
     }
 
-    public static Giardiniere getGiardiniere(){ 
+    public Giardiniere getGiardiniere(){ 
         if (azienda.noGardeners){
             azienda.createFirstGiardiniere();
         } 
-        return getGiardiniere();
+        return azienda.getGiardiniere();
     }
 
-    public static Pianta getPiantaS(String s){
+    public Pianta getPiantaS(String s){
         return seminatore.getPianta(s);
     }
 
-    public static Pianta getPiantaS(){
+    public Pianta getPiantaS(){
        return seminatore.getPianta();
     }
 

@@ -4,10 +4,10 @@ public class Cliente {
 
         // test all the functionalities of the project -- todo
         System.out.println("hello world");
-
         myCreatore.inizialize();
-        Giardiniere gard1 = myCreatore.azienda.getGiardiniere();
-        gard1.startCare(myCreatore.seminatore.getPianta());
+        Pianta plant1 = myCreatore.getPiantaS();
+        Giardiniere gard1 = myCreatore.getGiardiniere();
+        gard1.startCare(plant1);
         myCreatore.exploreAzienda();
         myCreatore.exploreSeminatore();
     }
