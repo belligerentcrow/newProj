@@ -5,3 +5,4 @@
 - creare classi di test per tutto   
 
 - capire perche' le piante iniziali vengono duplicate??
+- sistemare inconsistenza del generateType del seminatore
