@@ -11,11 +11,13 @@ public class Seminatore {
     private static String[] pianteTipiPossibili = {"Rosmarino", "Aloe"};
     private static List<String> listaPianteTipiPossibili = new ArrayList<>(Arrays.asList(pianteTipiPossibili));
     
+    /* 
     private String generateType(){
         int r = new Random().nextInt(pianteTipiPossibili.length);
         String s = pianteTipiPossibili[r];
         return s;
     }
+    */
 
     public int getNumPiante(){
         return numPiante;
